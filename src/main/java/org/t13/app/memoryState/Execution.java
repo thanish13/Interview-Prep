@@ -17,6 +17,12 @@ public class Execution {
 
         dataSource2.printData();
 
+        dataSource.add("Object3");
+
+        dataSource.printData();
+
+        dataSource2.printData();
+
 
     }
 }
