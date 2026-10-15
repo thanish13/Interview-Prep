@@ -18,7 +18,7 @@ public class EntryPoint {
     HashMap<String, Supplier<DataSource>> dataSourceHashMap = new HashMap<>();
 
     public EntryPoint(){
-        dataSourceHashMap.put("DataSource1", () -> new DataSource());
+        dataSourceHashMap.put("DataSource1", DataSource::new);
     }
 
     public DataSource getDataSource(){
